@@ -1,0 +1,38 @@
+.footer{
+  display: flex;
+  align-items: center;
+  background: $boxcol;
+  padding: 47.44px 85px;
+
+  .navbar{
+    margin-left: 103px;
+    padding: 0;
+  }
+
+}
+
+.social{
+  padding: 0;
+  margin-left: auto;
+
+  li{
+    display: inline-block;
+    margin-left: 24px;
+
+    i{
+      width: 24px;
+      height: 24px;
+      background: $white;
+    }
+   
+  }
+}
+
+
+
+
+
+
+
+
+

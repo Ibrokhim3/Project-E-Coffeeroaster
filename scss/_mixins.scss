@@ -1,0 +1,21 @@
+@mixin box {
+  background: #2C343E;
+  border-radius: 10px;
+  
+}
+
+@mixin button{
+  font-family: 'Fraunces', serif;
+  text-decoration: none;
+  background: $green;
+  border-radius: 6px;
+  padding: 15px 31px;
+  color: $white;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  &:hover{
+    background: $blackish;
+    transition: 0.5s ease-in;
+  }
+}

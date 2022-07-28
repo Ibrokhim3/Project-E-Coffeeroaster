@@ -1,0 +1,20 @@
+.navbar{
+    margin: 0;
+}
+    .nav_item{
+      display: inline-block;
+      margin-left: 32px;
+    }
+    
+    .nav_link{
+      text-decoration: none;
+      color: $gray;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.923077px;
+      text-transform: uppercase;
+
+
+    }
+  
