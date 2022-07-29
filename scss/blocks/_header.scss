@@ -1,11 +1,15 @@
-.container{
-  header{
+header{
     display: flex;
     justify-content: space-between;
     margin-bottom: 44px;
     align-items: center;
 
+    a{
+      text-decoration: none;
+    }
+
     
   }
-}  
+
+
 
