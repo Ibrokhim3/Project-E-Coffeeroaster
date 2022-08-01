@@ -2,5 +2,15 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 44px 80px 88px 80px;
-  background: #F2F2F2;
+  background: #FEFCF7;
+
+  @media only screen and (max-width:768px){
+    padding: 40px 40px 72px 40px;
+
+  }
+
+
+
+
+
 }

@@ -13,13 +13,12 @@
     
     
   }
-  p{
+  .box_txt{
     margin: 0;
     width: 540px;
     color: $white;
     font-size: $fsz;
     line-height: 26px;
-    color: #FEFCF7;
     opacity: 0.8;
     margin: 0 auto;
     margin-bottom: 86px;
@@ -31,17 +30,28 @@
     display: flex;
     // align-items: center;
     gap: 30px;
+  
 
 
     .card{
 
       padding: 72px 48px 48px 48px;
-      height: 382px ;
       background: $green;
       display: flex;
       align-items: center;
       flex-direction: column;
       border-radius: 8px;
+      
+      
+
+      .box__card_txt{
+        color: $white;
+        font-size: $fsz;
+        line-height: 26px;
+      
+
+        
+      }
 
       .card__img{
         margin-bottom: 67px;
@@ -85,4 +95,84 @@
 
 }
 
+@media only screen and (max-width:768px){
+  height: 573px;
+  padding: 71px 58px 70px 57px;
+  margin-bottom: 434px;
+
+ h3{
+  margin: 0;
+  margin-bottom: 24px;
+ }
+
+
+  .box_txt{
+    margin-bottom: 70px;
+  }
+
+  .box__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    .card:last-child{
+      padding-top: 41px;
+    }
+
+    .card{
+      width: 573px;
+      display: flex;
+      flex-direction: row;
+      gap: 55.5px;
+      padding: 41px 48px 41px 70.5px;
+
+      img{
+        width: 55px;
+        height: 56px;
+        margin-bottom: 0;
+      }
+
+      .card__img{
+        margin: 0;
+      }
+      
+
+      .box__card_txt{
+        width: 344px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 25px;
+        margin: 0;
+       
+      }
+
+      h3{
+        text-align: left; 
+        margin-bottom: 16px;
+      }
+      
+    }
+  }
+
+  h3{
+    font-size: 32px;  
+   
+  }
+
+  p{
+    font-size: 15px;
+    line-height: 25px;
+    
+  }
+
+  
+
+
+
+
+
 }
+}
+
+

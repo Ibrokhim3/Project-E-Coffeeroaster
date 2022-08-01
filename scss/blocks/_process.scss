@@ -6,27 +6,35 @@
     font-family: 'Fraunces', serif;
     font-size: 24px;
     line-height: 32px;
-   
-    
+    margin: 0 0 80px 0;
   }
 
   .circle{
     position: relative;
     margin-bottom: 67px;
+
+
+    .circle_wrapper{
+      display: inline-flex;
+
+    }
+    
   
 
-    span{
+    .circle__round{
       width: 31px;
       height: 31px;
       border: 2px solid $green;
       border-radius: 50%;
-      display: inline-block;
+      // display: inline-block;
       margin-right: 349px;
       position: relative;
       z-index: 2;
-      background: $backg;
+      background: $white;
 
-      &:last-child{
+    }
+
+      .circle_line{
         position: absolute;
         top: 44%;
         left: 1%;
@@ -38,61 +46,112 @@
         border-radius: 0;
         margin: 0;
         z-index: 1;
+      }
+        
 
 
       }
+    
+    
+    
+    
+      ul{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 64px;
+        display: flex;
+        gap: 95px;
+       
+          
+    
+          li{
+            display: inline-block;
+            
+           
+          }
+    
+    
+        span{
+          font-family: 'Fraunces', serif;
+          color: $gold;
+          font-size: 72px;
+          line-height: 72px;
+          
+          
+          
+    
+    
+        }
+        h4{
+          color: $blackish;
+          font-family: 'Fraunces', serif;
+          font-size: 32px;
+          line-height: 36px;
+          margin: 0;
+          margin-top: 38px;
+          margin-bottom: 43px;
+          width: 255px;
+        }
+        p{
+          margin: 0;
+          width: 285px;
+          color: $blackish;
+          font-size: $fsz;
+          
+        }
+      }
+    
+      a{
+        @include button;
+      }
+    
+  
+
+
+  @media only screen and (max-width: 768px){
+    margin-bottom: 144px;
+    padding: 0;
+
+  h4{ 
+    margin: 0 0 40px 0;
+
+  }
+
+  .circle{
+
+    // .circle_wrapper{
+
+    // }
+
+    .circle_line{
+      width: 467px;
+    }
+
+    .circle__round{
+      margin-right: 202px;
+
     }
   }
 
   ul{
-    margin: 0;
-    padding: 0;
-    margin-bottom: 64px;
-      
+    gap: 10px; 
+    margin-bottom: 44px; 
+    li{
 
-      li{
-        display: inline-block;
-        margin-right: 95px;
-       
+      h4{
+        font-size: 28px;
+        line-height: 32px;
+        width: 223px;
       }
 
-
-    span{
-      font-family: 'Fraunces', serif;
-      color: $gold;
-      font-size: 72px;
-      line-height: 72px;
-      
-      
-      
-
-
+      p{
+        font-size: 15px;
+        line-height: 25px;
+        width: 223px;
+      }
     }
-    h4{
-      color: $blackish;
-      font-family: 'Fraunces', serif;
-      font-size: 32px;
-      line-height: 36px;
-      margin: 0;
-      margin-top: 38px;
-      margin-bottom: 43px;
-      width: 255px;
+  }  
     }
-    p{
-      margin: 0;
-      width: 285px;
-      color: $blackish;
-      font-size: $fsz;
-      
-    }
+
   }
 
-  a{
-    @include button;
-  }
-  
-      
-    
-  
-
-}

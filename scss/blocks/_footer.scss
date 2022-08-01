@@ -13,7 +13,7 @@
     padding: 0;
   }
 
-}
+
 
 .social{
   padding: 0;
@@ -31,6 +31,45 @@
    
   }
 }
+
+  @media only screen and (max-width: 768px){
+    flex-direction: column;
+    padding: 54px 0;
+
+    a{
+      margin-bottom: 33.56px;
+
+    }
+
+    .navbar{
+      margin: 0;
+      margin-bottom: 65px;
+
+      li:first-child{
+        margin: 0;
+      }
+     
+      
+    }
+
+    .social{
+      margin: 0;
+      gap: 24px;
+      display: flex;
+    
+
+      li{
+        margin: 0;
+
+      }
+    }
+
+  }
+}
+  
+
+
+
 
 
 
