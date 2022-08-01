@@ -153,5 +153,52 @@
   }  
     }
 
+    @media only screen and (max-width: 375px){
+      margin-bottom: 144px;
+      padding: 0;
+  
+    h4{ 
+      margin: 0 0 80px 0;
+      text-align: center;
+  
+    }
+  
+    .circle{
+  
+      display: none;
+  
+      .circle_line{
+        width: 467px;
+      }
+  
+      .circle__round{
+        margin-right: 202px;
+  
+      }
+    }
+  
+    ul{
+      gap: 10px; 
+      margin-bottom: 44px; 
+      flex-direction: column;
+      li{
+        text-align: center;
+      
+  
+        h4{
+          font-size: 28px;
+          line-height: 32px;
+          width: 223px;
+        }
+  
+        p{
+          font-size: 15px;
+          line-height: 25px;
+          width: 223px;
+        }
+      }
+    }  
+      }
+
   }
 

@@ -38,6 +38,11 @@ body {
     padding: 40px 40px 72px 40px;
   }
 }
+@media only screen and (max-width: 375px) {
+  .container {
+    padding: 32.31px 24px 0px 24px;
+  }
+}
 
 header {
   display: flex;
@@ -68,6 +73,21 @@ header a {
   text-transform: uppercase;
 }
 
+.button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .navbar {
+    display: none;
+  }
+  .button {
+    display: block;
+  }
+}
 .hero {
   padding: 124px 0px 116px 86px;
   background-image: url(../assets/img/img1.png);
@@ -127,6 +147,25 @@ header a {
     font-size: 15px;
     line-height: 25px;
     width: 398px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hero {
+    background-image: url(./../../assets/img/img\ mobile.png) center center no-repeat;
+    padding: 100px 24px 99px 24px;
+    background-size: cover;
+    margin-bottom: 120px;
+    text-align: center;
+  }
+  .hero h1 {
+    width: 279px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+  .hero p {
+    width: 279px;
+    margin-bottom: 39px;
   }
 }
 
@@ -192,6 +231,29 @@ header a {
     font-size: 15px;
     line-height: 25px;
     width: 282px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .collection h3 {
+    width: 286px;
+    font-size: 40px;
+    line-height: 72px;
+    text-align: center;
+    margin-bottom: 13px;
+  }
+  .collection ul {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    text-align: center;
+  }
+  .collection ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  .collection ul img {
+    width: 200px;
+    height: 151px;
   }
 }
 
@@ -319,6 +381,68 @@ header a {
     line-height: 25px;
   }
 }
+@media only screen and (max-width: 375px) {
+  .box {
+    height: 902px;
+    padding: 64px 24px 0px 24px;
+    margin-bottom: 717px;
+  }
+  .box h3 {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 28px;
+    line-height: 1;
+  }
+  .box .box_txt {
+    width: 279px;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+  .box .box__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .box .box__cards .card:last-child {
+    padding-top: 83px;
+    padding-bottom: 48px;
+  }
+  .box .box__cards .card {
+    width: 279px;
+    flex-direction: column;
+    gap: 0;
+    padding: 72px 12px 51px 12px;
+  }
+  .box .box__cards .card img {
+    width: 71px;
+    height: 72px;
+    margin-bottom: 56px;
+  }
+  .box .box__cards .card .card__img {
+    margin: 0;
+    margin-bottom: 67px;
+    width: 72px;
+    height: 50px;
+  }
+  .box .box__cards .card .box__card_txt {
+    text-align: center;
+    width: 212px;
+    margin: 0;
+  }
+  .box .box__cards .card h3 {
+    text-align: center;
+    margin-bottom: 24px;
+    width: 225px;
+  }
+  .box h3 {
+    font-size: 32px;
+  }
+  .box p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
 
 .process {
   padding-left: 85px;
@@ -425,6 +549,43 @@ header a {
   .process ul {
     gap: 10px;
     margin-bottom: 44px;
+  }
+  .process ul li h4 {
+    font-size: 28px;
+    line-height: 32px;
+    width: 223px;
+  }
+  .process ul li p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 223px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .process {
+    margin-bottom: 144px;
+    padding: 0;
+  }
+  .process h4 {
+    margin: 0 0 80px 0;
+    text-align: center;
+  }
+  .process .circle {
+    display: none;
+  }
+  .process .circle .circle_line {
+    width: 467px;
+  }
+  .process .circle .circle__round {
+    margin-right: 202px;
+  }
+  .process ul {
+    gap: 10px;
+    margin-bottom: 44px;
+    flex-direction: column;
+  }
+  .process ul li {
+    text-align: center;
   }
   .process ul li h4 {
     font-size: 28px;
