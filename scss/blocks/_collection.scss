@@ -76,6 +76,7 @@ margin-bottom: -70px;
   }
 
   @media only screen and (max-width: 768px) {
+    
     h3{
       width: 689px;
       font-size: 96px;
@@ -105,30 +106,48 @@ margin-bottom: -70px;
   }
 
   @media only screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+.collection_text{
+
+}
+
     h3{
       width: 286px;
       font-size: 40px;
       line-height: 72px;
-      text-align: center;
       margin-bottom: 13px;
     }
 
     ul{
+
       display: flex;
       flex-direction: column;
       gap: 48px;
-      text-align: center;
+      padding: 0;
 
 
      li{
       display: flex;
       flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin: 0;
+
+
+      &:last-child{
+        margin: 0;
+      }
     
     
     }
     
 
       p{
+        
      
       }
 

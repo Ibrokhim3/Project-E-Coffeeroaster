@@ -65,6 +65,50 @@
     }
 
   }
+
+
+  @media only screen and (max-width: 375px){
+    flex-direction: column;
+    padding: 54px;
+
+    a{
+      margin-bottom: 50px;
+
+    }
+
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin: 0;
+      margin-bottom: 48.56px;
+      gap: 24px;
+      
+
+      li{
+        margin: 0;
+      }
+    
+      
+    }
+
+    .social{
+      margin: 0;
+      gap: 24px;
+      display: flex;
+    
+
+      li{
+        margin: 0;
+
+      }
+    }
+
+  }
+
+
+
 }
   
 

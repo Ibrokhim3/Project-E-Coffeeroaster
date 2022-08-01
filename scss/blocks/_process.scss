@@ -111,6 +111,7 @@
   @media only screen and (max-width: 768px){
     margin-bottom: 144px;
     padding: 0;
+    text-align: center;
 
   h4{ 
     margin: 0 0 40px 0;
@@ -154,7 +155,7 @@
     }
 
     @media only screen and (max-width: 375px){
-      margin-bottom: 144px;
+      margin-bottom: 120px;
       padding: 0;
   
     h4{ 
@@ -178,8 +179,8 @@
     }
   
     ul{
-      gap: 10px; 
-      margin-bottom: 44px; 
+      gap: 56px; 
+      margin-bottom: 79px; 
       flex-direction: column;
       li{
         text-align: center;
@@ -188,16 +189,22 @@
         h4{
           font-size: 28px;
           line-height: 32px;
-          width: 223px;
+          width: 327px;
         }
   
         p{
           font-size: 15px;
           line-height: 25px;
-          width: 223px;
+          width: 327px;
         }
       }
     }  
+
+a{
+  align-items: center;
+  
+}
+
       }
 
   }
