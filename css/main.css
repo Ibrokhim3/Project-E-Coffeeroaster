@@ -134,7 +134,7 @@ header a {
 }
 @media only screen and (max-width: 768px) {
   .hero {
-    background-image: url(./../../assets/img/Bitmap.png) center center no-repeat;
+    background: url("./../../assets/img/Bitmap.png") center center no-repeat;
     padding: 104px 0px 104px 58px;
     background-size: cover;
     margin-bottom: 144px;
@@ -152,7 +152,7 @@ header a {
 }
 @media only screen and (max-width: 375px) {
   .hero {
-    background-image: url(./../../assets/img/img\ mobile.png) center center;
+    background: url(./../../assets/img/img\ mobile.png) center center;
     padding: 100px 24px 99px 24px;
     width: 100%;
     height: 100%;
