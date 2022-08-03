@@ -160,6 +160,9 @@ header a {
     background-repeat: no-repeat;
     margin-bottom: 120px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .hero h1 {
     width: 279px;
@@ -559,7 +562,6 @@ header a {
   .process {
     margin-bottom: 144px;
     padding: 0;
-    text-align: center;
   }
   .process h4 {
     margin: 0 0 40px 0;
@@ -587,12 +589,12 @@ header a {
 }
 @media only screen and (max-width: 768px) {
   .process {
+    text-align: center;
     margin-bottom: 120px;
     padding: 0;
   }
   .process h4 {
     margin: 0 0 80px 0;
-    text-align: center;
   }
   .process .circle {
     display: none;
@@ -607,6 +609,7 @@ header a {
     gap: 56px;
     margin-bottom: 79px;
     flex-direction: column;
+    align-items: center;
   }
   .process ul li {
     text-align: center;
