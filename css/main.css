@@ -33,12 +33,12 @@ body {
   padding: 44px 80px 88px 80px;
   background: #FEFCF7;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
   .container {
     padding: 40px 40px 72px 40px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .container {
     padding: 32.31px 24px 72px 24px;
   }
@@ -80,7 +80,7 @@ header a {
   display: none;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .navbar:not(:nth-child(2)) {
     display: none;
   }
@@ -132,7 +132,7 @@ header a {
   background: #333D4B;
   transition: 0.5s ease-in;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
   .hero {
     background: url("./../../assets/img/Bitmap.png") center center no-repeat;
     padding: 104px 0px 104px 58px;
@@ -150,12 +150,14 @@ header a {
     width: 398px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .hero {
     background: url(./../../assets/img/img\ mobile.png) center center;
     padding: 100px 24px 99px 24px;
     width: 100%;
     height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 120px;
     text-align: center;
   }
@@ -215,7 +217,12 @@ header a {
   left: 0;
   top: 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
+  .collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .collection h3 {
     width: 689px;
     font-size: 96px;
@@ -228,6 +235,10 @@ header a {
   }
   .collection ul li {
     display: flex;
+    margin: 0;
+  }
+  .collection ul li:last-child {
+    margin: 0;
   }
   .collection ul li p {
     font-size: 15px;
@@ -235,7 +246,7 @@ header a {
     width: 282px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .collection {
     display: flex;
     flex-direction: column;
@@ -337,7 +348,7 @@ header a {
   line-height: 26px;
   text-align: center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
   .box {
     height: 573px;
     padding: 71px 58px 70px 57px;
@@ -393,7 +404,7 @@ header a {
     line-height: 25px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .box {
     height: 902px;
     padding: 64px 24px 0px 24px;
@@ -544,7 +555,7 @@ header a {
   background: #333D4B;
   transition: 0.5s ease-in;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
   .process {
     margin-bottom: 144px;
     padding: 0;
@@ -574,7 +585,7 @@ header a {
     width: 223px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .process {
     margin-bottom: 120px;
     padding: 0;
@@ -641,7 +652,7 @@ header a {
   height: 24px;
   background: #FEFCF7;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
   .footer {
     flex-direction: column;
     padding: 54px 0;
@@ -665,7 +676,7 @@ header a {
     margin: 0;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
     padding: 54px;
