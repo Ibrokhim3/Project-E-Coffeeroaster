@@ -4,7 +4,7 @@
    text-align: center;
    height: 577px;
    margin-bottom: 351px;
-  h3{
+  .box__title{
     margin-bottom: 32px;
     font-family: 'Fraunces', serif;
     color: $white;
@@ -13,7 +13,7 @@
     
     
   }
-  .box_txt{
+  .box__txt{
     margin: 0;
     width: 540px;
     color: $white;
@@ -33,7 +33,7 @@
   
 
 
-    .card{
+    .cards__card{
 
       padding: 72px 48px 48px 48px;
       background: $green;
@@ -44,7 +44,7 @@
       
       
 
-      .box__card_txt{
+      .card-txt-wrappper{
         color: $white;
         font-size: $fsz;
         line-height: 26px;
@@ -54,11 +54,11 @@
       }
 
       .card__img{
-        margin-bottom: 67px;
+        margin-bottom: 56px;
       }
 
-      img{
-        margin-bottom: 56px;
+      .card__img-van{
+        margin-bottom: 67px;
 
       }
 
@@ -66,11 +66,13 @@
 
     }
 
-    .card:last-child{
+  
+
+    .cards__card-van{
       padding-top: 83px;
     }
 
-    h3{
+    .card-txt__title{
       margin: 0;
       font-family: 'Fraunces', serif;
       color: $white;
@@ -81,7 +83,7 @@
 
     }
 
-    p{
+    .card-txt__txt{
       width: 255px;
       font-family: 'Barlow', sans-serif;
       color: $white;
@@ -100,13 +102,13 @@
   padding: 71px 58px 70px 57px;
   margin-bottom: 434px;
 
- h3{
+ .box__title{
   margin: 0;
   margin-bottom: 24px;
  }
 
 
-  .box_txt{
+  .box__txt{
     margin-bottom: 70px;
   }
 
@@ -116,18 +118,18 @@
     flex-wrap: wrap;
     gap: 24px;
 
-    .card:last-child{
+    .cards__card-van{
       padding-top: 41px;
     }
 
-    .card{
+    .cards__card{
       width: 573px;
       display: flex;
       flex-direction: row;
       gap: 55.5px;
       padding: 41px 48px 41px 70.5px;
 
-      img{
+      .card__img{
         width: 55px;
         height: 56px;
         margin-bottom: 0;
@@ -138,7 +140,11 @@
       }
       
 
-      .box__card_txt{
+      .card-txt__title{
+        text-align: left; 
+        margin-bottom: 16px;
+      }
+      .card-txt__txt{
         width: 344px;
         text-align: left;
         font-size: 15px;
@@ -147,20 +153,16 @@
        
       }
 
-      h3{
-        text-align: left; 
-        margin-bottom: 16px;
-      }
       
     }
   }
 
-  h3{
+  .box__title{
     font-size: 32px;  
    
   }
 
-  p{
+  .box__txt{
     font-size: 15px;
     line-height: 25px;
     
@@ -178,7 +180,7 @@
   padding: 64px 24px 0px 24px;
   margin-bottom: 717px;
 
- h3{
+ .box__title{
   margin: 0;
   margin-bottom: 24px;
   font-size: 28px;
@@ -186,7 +188,7 @@
 }
 
 
-  .box_txt{
+  .box__txt{
     width: 279px;
     margin-bottom: 64px;
     text-align: center;
@@ -198,26 +200,26 @@
     flex-wrap: wrap;
     gap: 24px;
 
-    .card:last-child{
+    .cards__card-van{
       padding-top: 83px;
       padding-bottom: 48px;
 
       
     }
 
-    .card{
+    .cards__card{
       width: 279px;
       flex-direction: column;
       gap: 0;
       padding: 72px 12px 51px 12px;
 
-      img{
+      .card__img{
         width: 71px;
         height: 72px;
         margin-bottom: 56px;
       }
 
-      .card__img{
+      .card__img-van{
         margin: 0;
         margin-bottom: 67px;
         width: 72px;
@@ -225,14 +227,14 @@
       }
       
 
-      .box__card_txt{
+      .card-txt__txt{
         text-align: center;
         width: 212px;
         margin: 0;
        
       }
 
-      h3{
+      .card-txt__title{
         text-align: center;
         margin-bottom: 24px;
         width: 225px;
@@ -240,24 +242,6 @@
       
     }
   }
-
-  h3{
-    font-size: 32px;  
-   
-  }
-
-  p{
-    font-size: 15px;
-    line-height: 25px;
-    
-  }
-
-  
-
-
-
-
-
 }
 }
 

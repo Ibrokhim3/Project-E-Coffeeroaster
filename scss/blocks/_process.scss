@@ -1,7 +1,7 @@
 .process{
   padding-left: 85px;
   margin-bottom: 200px;
-  h4{
+  .process__title{
     color: $gray;
     font-family: 'Fraunces', serif;
     font-size: 24px;
@@ -9,12 +9,12 @@
     margin: 0 0 80px 0;
   }
 
-  .circle{
+  .process__circle{
     position: relative;
     margin-bottom: 67px;
 
 
-    .circle_wrapper{
+    .circle-wrapper{
       display: inline-flex;
 
     }
@@ -34,7 +34,7 @@
 
     }
 
-      .circle_line{
+      .circle__line{
         position: absolute;
         top: 44%;
         left: 1%;
@@ -55,7 +55,7 @@
     
     
     
-      ul{
+      .process__list{
         margin: 0;
         padding: 0;
         margin-bottom: 64px;
@@ -64,14 +64,14 @@
        
           
     
-          li{
+          .process__list-item{
             display: inline-block;
             
            
           }
     
     
-        span{
+        .process__list-number{
           font-family: 'Fraunces', serif;
           color: $gold;
           font-size: 72px;
@@ -82,7 +82,7 @@
     
     
         }
-        h4{
+        .process__list-title{
           color: $blackish;
           font-family: 'Fraunces', serif;
           font-size: 32px;
@@ -92,7 +92,7 @@
           margin-bottom: 43px;
           width: 255px;
         }
-        p{
+        .process__list-txt{
           margin: 0;
           width: 285px;
           color: $blackish;
@@ -101,7 +101,7 @@
         }
       }
     
-      a{
+      .process__link{
         @include button;
       }
     
@@ -113,18 +113,18 @@
     padding: 0;
     // text-align: center;
 
-  h4{ 
+  .process__title{ 
     margin: 0 0 40px 0;
 
   }
 
-  .circle{
+  .process__circle{
 
     // .circle_wrapper{
 
     // }
 
-    .circle_line{
+    .circle__line{
       width: 467px;
     }
 
@@ -134,18 +134,18 @@
     }
   }
 
-  ul{
+  .process__list{
     gap: 10px; 
     margin-bottom: 44px; 
-    li{
+    .process__list-item{
 
-      h4{
+      .process__list-title{
         font-size: 28px;
         line-height: 32px;
         width: 223px;
       }
 
-      p{
+      .process__list-txt{
         font-size: 15px;
         line-height: 25px;
         width: 223px;
@@ -159,17 +159,17 @@
       margin-bottom: 120px;
       padding: 0;
   
-    h4{ 
+    .process__title{ 
       margin: 0 0 80px 0;
       
   
     }
   
-    .circle{
+    .process__circle{
   
       display: none;
   
-      .circle_line{
+      .circle__line{
         width: 467px;
       }
   
@@ -179,22 +179,22 @@
       }
     }
   
-    ul{
+    .process__list{
       gap: 56px; 
       margin-bottom: 79px; 
       flex-direction: column;
       align-items: center;
       
-      li{
+      .process__list-item{
         text-align: center;
      
-        h4{
+        .process__list-title{
           font-size: 28px;
           line-height: 32px;
           width: 327px;
         }
   
-        p{
+        .process__list-txt{
           font-size: 15px;
           line-height: 25px;
           width: 327px;
@@ -202,7 +202,7 @@
       }
     }  
 
-a{
+.process__link{
   align-items: center;
   
 }
