@@ -6,7 +6,7 @@
 
 
   
-  ul{
+  .collection__list{
     // text-align: center;
     position: relative;
     // // top: 50%;
@@ -15,12 +15,12 @@
 
     
 
-    li{
+    .collection__list-item{
       display: inline-block;
       text-align: center;
       margin-left: 30px;
 
-      &:last-child{
+      .list-item{
         margin-left: 51px;
       }
 
@@ -89,15 +89,15 @@ margin-bottom: -70px;
     
     }
 
-    ul{
+    .collection__list{
       display: flex;
       flex-direction: column;
       gap: 35px;
-     li{
+     .collection__list-item{
       display: flex;
       margin: 0;
 
-      &:last-child{
+      .list-item{
         margin: 0;
       }
     
@@ -133,7 +133,7 @@ margin-bottom: -70px;
       margin-bottom: 13px;
     }
 
-    ul{
+    .collection__list{
 
       display: flex;
       flex-direction: column;
@@ -141,7 +141,7 @@ margin-bottom: -70px;
       padding: 0;
 
 
-     li{
+     .collection__list-item{
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -149,7 +149,7 @@ margin-bottom: -70px;
       margin: 0;
 
 
-      &:last-child{
+      .list-item{
         margin: 0;
       }
     

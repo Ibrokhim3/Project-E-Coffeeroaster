@@ -1,13 +1,13 @@
-.navbar{
+.nav__navbar{
     margin: 0;
     
 }
-    .nav_item{
+    .navbar__nav-item{
       display: inline-block;
       margin-left: 32px;
     }
     
-    .nav_link{
+    .navbar__nav-link{
       text-decoration: none;
       color: $gray;
       font-weight: 700;
@@ -19,7 +19,7 @@
     }
 
 
-    .button{
+    .header__button{
       background: transparent;
       border: 0;
       cursor: pointer;
@@ -27,11 +27,11 @@
     }
 
     @media only screen and (max-width: 768px){
-      .navbar:not(:nth-child(2)){
+      .nav__navbar:not(:nth-child(2)){
         display: none;
       }
 
-      .button{
+      .header__button{
         display: block;
         margin-left: auto;
       }

@@ -8,7 +8,7 @@
 border-radius: 10px;
 margin-bottom: 136px;
 
-h1{
+.hero__title{
   margin: 0;
   margin-bottom: 32px;
   font-family: 'Fraunces';
@@ -20,7 +20,7 @@ line-height: 72px;
 color: #FEFCF7;
 }
 
-p{
+.hero__txt{
   margin: 0;
   margin-bottom: 56px;
   width: 445px;
@@ -33,7 +33,7 @@ p{
 
 }
 
-a{
+.hero__link{
   @include button
 }
 
@@ -45,7 +45,7 @@ a{
   margin-bottom: 144px;
 
 
-  h1{
+  .hero__title{
     width: 329px;
     font-size: 48px;
     line-height: 1;
@@ -53,7 +53,7 @@ a{
 
   }
 
-  p{
+  .hero__txt{
     font-size: 15px;
 line-height: 25px;
 width: 398px;
@@ -79,14 +79,14 @@ width: 398px;
   align-items: center;
 
 
-  h1{
+  .hero__title{
     width: 279px;
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 24px;
   }
 
-  p{
+  .hero__txt{
     width: 279px;
     margin-bottom: 39px;
   }
