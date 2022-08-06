@@ -98,14 +98,11 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .header__nav {
-    display: none;
-  }
   .header--opened {
     background-color: #FEFCF7;
   }
   .header--opened .header__nav {
-    display: block;
+    display: none;
   }
   .header__nav {
     position: absolute;
@@ -125,12 +122,6 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 0;
-  }
-  .header__button {
-    width: 30px;
-    display: block;
-    margin-left: auto;
-    position: relative;
   }
   .header__button-inner,
 .header__button::after,
@@ -161,6 +152,12 @@ body {
   }
   .header__button-inner {
     margin: 3px 0;
+  }
+  .header__button {
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    position: relative;
   }
   .header__nav-link {
     font-family: "Fraunces", serif;

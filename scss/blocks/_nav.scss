@@ -37,7 +37,7 @@
     @media only screen and (max-width: 768px){
 
       .header__nav{
-        display: none;
+       
       }
 
       .header--opened{
@@ -45,7 +45,7 @@
       }
 
       .header--opened .header__nav{
-        display: block;
+        display: none;
       
       }
 
@@ -57,6 +57,9 @@
         height: calc(100vh - 30.2px);
         background: linear-gradient(180deg, #FEFCF7 55.94%, rgba(254, 252, 247, 0.504981) 100%);
         padding-top: 40px;
+        
+        
+        
 
       }
 
@@ -78,13 +81,7 @@
         
       }
 
-      .header__button{
-        width: 30px;
-        display: block;
-        margin-left: auto;
-        position: relative;
-
-      }
+     
 
       .header__button-inner,
       .header__button::after,
@@ -124,6 +121,14 @@
 
       .header__button-inner{
         margin: 3px 0;
+      }
+
+      .header__button{
+        width: 30px;
+        display: block;
+        margin-left: auto;
+        position: relative;
+
       }
 
       .header__nav-link{
