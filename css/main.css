@@ -27,6 +27,17 @@ body {
   margin: 0;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -54,12 +65,18 @@ body {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+}
 .nav__navbar {
   margin: 0;
+  display: flex;
+  list-style: none;
 }
 
 .navbar__nav-item {
-  display: inline-block;
   margin-left: 32px;
 }
 
@@ -74,19 +91,83 @@ body {
 }
 
 .header__button {
+  display: none;
   background: transparent;
   border: 0;
   cursor: pointer;
-  display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .nav__navbar:not(:nth-child(2)) {
+  .header__nav {
     display: none;
   }
+  .header--opened {
+    background-color: #FEFCF7;
+  }
+  .header--opened .header__nav {
+    display: block;
+  }
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 30.2px);
+    background: linear-gradient(180deg, #FEFCF7 55.94%, rgba(254, 252, 247, 0.504981) 100%);
+    padding-top: 40px;
+  }
+  .navbar__nav-item {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  .nav__navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
   .header__button {
+    width: 30px;
     display: block;
     margin-left: auto;
+    position: relative;
+  }
+  .header__button-inner,
+.header__button::after,
+.header__button::before {
+    display: block;
+    width: 16px;
+    height: 3px;
+    background-color: #333d4b;
+    border-radius: 1.5px;
+    content: "";
+    transition: 0.5s ease all;
+  }
+  .header--opened .header__button-inner {
+    display: none;
+  }
+  .header--opened .header__button::before,
+.header--opened .header__button::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+  }
+  .header--opened .header__button::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .header--opened .header__button::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .header__button-inner {
+    margin: 3px 0;
+  }
+  .header__nav-link {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
   }
 }
 .hero {

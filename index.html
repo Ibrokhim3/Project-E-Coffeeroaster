@@ -10,14 +10,17 @@
 </head>
 <body>
  <div class="container">
-  <header class="header">
+  <header class="header header--opened">
     <a href="" class="header__link"><img class="header__img" src="./assets/icons/logo.svg" alt="logo"></a> 
-    <button class="header__button" type="menu"><img class="header__button-img" src="./assets/icons/Combined Shape.svg" alt="menu"></button>
-    <nav class="nav">
+    <button class="header__button" type="menu">
+      <span class="header__button-inner"></span>
+      <span class="visually-hidden">Menu toggler button</span>
+    </button>
+    <nav class="nav header__nav">
       <ul class="nav__navbar">
-        <li class="navbar__nav-item"> <a class="navbar__nav-link" href="#">Home</a>  </li>
-        <li class="navbar__nav-item"> <a class="navbar__nav-link" href="#">About us</a>  </li>
-        <li class="navbar__nav-item"> <a class="navbar__nav-link" href="#">Create your plan</a> </li>
+        <li class="navbar__nav-item"> <a class="navbar__nav-link header__nav-link" href="#">Home</a>  </li>
+        <li class="navbar__nav-item"> <a class="navbar__nav-link header__nav-link" href="#">About us</a>  </li>
+        <li class="navbar__nav-item"> <a class="navbar__nav-link header__nav-link" href="#">Create your plan</a> </li>
       </ul>
     </nav>
   </header>
@@ -143,5 +146,18 @@
     </ul>
   </footer>
 </div>
+
+<script>
+  const elToggler = document.querySelector(".header__button"); 
+  const elHeader = document.querySelector(".header");
+
+  elToggler.addEventListener("click", function(){
+    elHeader.classList.toggle("header--opened")
+  })
+
+
+
+</script>
+
 </body>
 </html>
