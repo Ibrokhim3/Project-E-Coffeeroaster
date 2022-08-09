@@ -30,6 +30,27 @@
     // }
    
   }
+
+  .footer__social-icon{
+    fill: $white;
+
+
+    &:hover{
+      fill: $gold;
+    }
+
+    &:active{
+      fill: $gold;
+    }
+
+    &:active{
+      fill: $gold;
+
+    }
+
+    
+  }
+
 }
 
   @media only screen and (max-width: 1280px){
