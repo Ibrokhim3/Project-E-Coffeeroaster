@@ -41,24 +41,40 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 44px 80px 88px 80px;
+  padding: 0px 80px 88px 80px;
   background: #FEFCF7;
 }
 @media only screen and (max-width: 1280px) {
   .container {
-    padding: 40px 40px 72px 40px;
+    padding: 0px 40px 72px 40px;
   }
 }
 @media only screen and (max-width: 668px) {
   .container {
-    padding: 32.31px 24px 72px 24px;
+    padding: 0px 24px 72px 24px;
+  }
+}
+
+.header_container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 44px 80px 44px 80px;
+  background: #FEFCF7;
+}
+@media only screen and (max-width: 1280px) {
+  .header_container {
+    padding: 40px 40px 54.56px 40px;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .header_container {
+    padding: 32.31px 24px 40px 24px;
   }
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 44px;
   align-items: center;
 }
 .header .header__link {
