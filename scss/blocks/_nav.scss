@@ -34,7 +34,7 @@
 
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 668px){
   
   .header__nav{
     
@@ -45,7 +45,7 @@
   }
 
   .header__nav {
-    display: none;
+    // display: none;
   }
   
   .header--opened .header__nav{
@@ -53,16 +53,14 @@
   }
   
   .header__nav{
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: calc(100vh - 30.2px);
     background: linear-gradient(180deg, #FEFCF7 55.94%, rgba(254, 252, 247, 0.504981) 100%);
-    padding-top: 40px;
-    
-    
-    
+    padding-top: 80px;
     
   }
   
@@ -85,8 +83,8 @@
   }
   
   .header__button{
-    width: 30px;
     display: block;
+    width: 30px;
     margin-left: auto;
     position: relative;
     
@@ -115,20 +113,22 @@
   .header--opened .header__button::before,
   .header--opened .header__button::after{
     position: absolute;
-    top: 50%; 
-    left: 0;
-    right: 0;
+    // top: 50%; 
+    // left: 0%;
+    
     
   }
   
   
+
+  //chap tomonga surilib qovotti x
+  .header--opened .header__button::after{
+    transform: translateY(-50%) rotate(-45deg);
+  }
   .header--opened .header__button::before{
     transform: translateY(-50%) rotate(45deg);
   }
   
-  .header--opened .header__button::after{
-    transform: translateY(-50%) rotate(-45deg);
-  }
   
   .header__button-inner{
     margin: 3px 0;

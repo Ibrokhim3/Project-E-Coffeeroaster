@@ -49,7 +49,7 @@ body {
     padding: 40px 40px 72px 40px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
   .container {
     padding: 32.31px 24px 72px 24px;
   }
@@ -65,7 +65,7 @@ body {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
   .header {
     position: relative;
   }
@@ -97,24 +97,22 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
   .header--opened {
     background-color: #FEFCF7;
-  }
-  .header__nav {
-    display: none;
   }
   .header--opened .header__nav {
     display: block;
   }
   .header__nav {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: calc(100vh - 30.2px);
     background: linear-gradient(180deg, #FEFCF7 55.94%, rgba(254, 252, 247, 0.504981) 100%);
-    padding-top: 40px;
+    padding-top: 80px;
   }
   .navbar__nav-item {
     margin: 0;
@@ -127,8 +125,8 @@ body {
     padding: 0;
   }
   .header__button {
-    width: 30px;
     display: block;
+    width: 30px;
     margin-left: auto;
     position: relative;
   }
@@ -149,15 +147,12 @@ body {
   .header--opened .header__button::before,
 .header--opened .header__button::after {
     position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-  }
-  .header--opened .header__button::before {
-    transform: translateY(-50%) rotate(45deg);
   }
   .header--opened .header__button::after {
     transform: translateY(-50%) rotate(-45deg);
+  }
+  .header--opened .header__button::before {
+    transform: translateY(-50%) rotate(45deg);
   }
   .header__button-inner {
     margin: 3px 0;
@@ -231,7 +226,7 @@ body {
     width: 398px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
   .hero {
     background: url(./../../assets/img/img\ mobile.png) center center;
     padding: 100px 24px 99px 24px;
@@ -330,7 +325,7 @@ body {
     width: 282px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
   .collection {
     display: flex;
     flex-direction: column;
@@ -488,7 +483,7 @@ body {
     line-height: 25px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
   .box {
     height: 902px;
     padding: 64px 24px 0px 24px;
@@ -661,7 +656,7 @@ body {
     width: 223px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
   .process {
     text-align: center;
     margin-bottom: 120px;
@@ -760,7 +755,7 @@ body {
     margin: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
   .footer {
     flex-direction: column;
     padding: 54px;
